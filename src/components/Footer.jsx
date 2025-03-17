@@ -12,8 +12,7 @@ function Footer() {
           </div>
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Location</h3>
-            <p className="text-gray-400">15-3601 LAWRENCE AVE EAST SCARBOROUGH, ON M1G 1P5</p>
-            <p className="text-gray-400">TORONTO, CANADA</p>
+            <p className="text-gray-400">15-3601 LAWRENCE AVE EAST SCARBOROUGH, ON M1G 1P5,TORONTO, CANADA</p>
           </div>
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Business Hours</h3>
