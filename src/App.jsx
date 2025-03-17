@@ -9,6 +9,7 @@ import Kurtha from './components/Kurtha';
 import Lehanga from './components/Lehenga';
 import Blouse from './components/Blouse';
 import Sarees from './components/Saree';
+import Contact from './components/contact';
 
 function HomePage() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/salwar" element={<Salwar />} />
           <Route path="/kurthas" element={<Kurtha />} />
           <Route path="/Lehangas" element={<Lehanga />} />

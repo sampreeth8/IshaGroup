@@ -97,12 +97,12 @@ function Navbar() {
                 </div>
               </div>
 
-              <a
-                href="#contact"
+              <Link
+                to="/contact-us"
                 className="text-gray-700 hover:text-purple-800 px-3 py-2 rounded-md transition-colors"
               >
-                Contact
-              </a>
+                Contact Us
+              </Link>
             </div>
           </div>
         </div>
