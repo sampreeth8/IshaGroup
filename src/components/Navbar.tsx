@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
+import logo from "../images/logoH.jpg";
 
 function Navbar() {
   const [isCollectionOpen, setIsCollectionOpen] = useState(false);
@@ -30,14 +31,24 @@ function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+    <nav className="bg-white shadow-md h-20 md:h-24 flex items-center">
+      {" "}
+      {/* Increased Navbar Height */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="flex justify-between h-full items-center">
+          {" "}
+          {/* Ensures full height usage */}
+          {/* Logo Section */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-purple-800">
-              THE ISHA GROUP MFG
+            <Link to="/" className="block">
+              <img
+                src={logo}
+                alt="The Isha Group MFG"
+                className="h-20 md:h-24 w-auto max-w-[250px] object-contain" // Increased Logo Height & Width
+              />
             </Link>
           </div>
+          {/* Menu Items */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
               <Link

@@ -52,12 +52,15 @@ function App() {
       backgroundRepeat: 'no-repeat'
     }}
   ></div>
+  
+
+  
 
   {/* Content Positioned to Center-Left */}
   <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-start w-full">
     <div className="text-left text-white max-w-2xl">
       <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight drop-shadow-2xl">
-        <span className="block text-gold-400">The Isha Group MFG</span>  
+        <span className="block text-white-400">The Isha Group MFG</span>  
       </h1>
       <h2 className="text-2xl sm:text-3xl text-purple-400 font-semibold mt-2">
         Crafting Elegance in Every Stitch
