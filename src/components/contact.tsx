@@ -86,7 +86,7 @@ function Contact() {
               <p className="text-gray-600 mt-2">
                 Monday - Saturday:
                 <br />
-                6:00 AM - 10:00 PM
+                11:00 AM - 08:00 PM
                 <br />
                 Sunday: Closed
               </p>

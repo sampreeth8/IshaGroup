@@ -16,7 +16,7 @@ function Footer() {
           </div>
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Business Hours</h3>
-            <p className="text-gray-400">Monday - Saturday: 6:00 AM - 10:00 PM</p>
+            <p className="text-gray-400">Monday - Saturday: 11:00 AM - 08:00 PM</p>
             <p className="text-gray-400">Sunday: Closed</p>
           </div>
         </div>
