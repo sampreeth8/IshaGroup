@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import sal1 from "../images/sal1.png";
-import sal2 from "../images/sal2.png";
-import sal3 from "../images/sal3.png";
+import sal1 from "../images/salnew1.jpg";
+import sal2 from "../images/salnew2.jpg";
+import sal3 from "../images/salnew3.jpg";
 import sal4 from "../images/sal4.webp";
 
 function Salwar() {
@@ -73,7 +73,7 @@ function Salwar() {
             <img
               src={sal1}
               alt="Salwar Kameez Collection"
-              className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+              className="rounded-lg shadow-lg w-full h-[450px] object-cover"
             />
           </div>
         </div>

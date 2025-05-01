@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
-import logo from "../images/logoH.jpg";
+import logo from "../images/logoNew.jpg";
 
 function Navbar() {
   const [isCollectionOpen, setIsCollectionOpen] = useState(false);
@@ -31,7 +31,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md h-20 md:h-24 flex items-center">
+    <nav className="bg-[#F7F4EF] shadow-md h-20 md:h-24 flex items-center">
       {" "}
       {/* Increased Navbar Height */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">

@@ -1,6 +1,14 @@
 import { useState, FormEvent } from "react";
 import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
 import React from "react";
+import img1 from "../images/store1.jpg";
+import img2 from "../images/store2.jpg";
+import img3 from "../images/store3.jpg";
+import img4 from "../images/store4.jpg";
+import img5 from "../images/store5.jpg";
+import img6 from "../images/store6.jpg";
+import img7 from "../images/store7.jpg";
+
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -16,7 +24,7 @@ function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Banner */}
       <div className="bg-purple-900 text-white p-8">
         <div className="max-w-7xl mx-auto text-center">
@@ -35,7 +43,7 @@ function Contact() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4 md:px-8">
             {/* Email */}
-            <div className="bg-white p-8 rounded-lg shadow-md w-full text-center">
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="flex items-center justify-center mb-4">
                 <div className="bg-purple-100 p-4 rounded-full">
                   <FiMail className="h-8 w-8 text-purple-400" />
@@ -46,7 +54,7 @@ function Contact() {
             </div>
 
             {/* Phone */}
-            <div className="bg-white p-8 rounded-lg shadow-md w-full text-center">
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="flex items-center justify-center mb-4">
                 <div className="bg-purple-100 p-4 rounded-full">
                   <FiPhone className="h-8 w-8 text-purple-400" />
@@ -57,7 +65,7 @@ function Contact() {
             </div>
 
             {/* Location */}
-            <div className="bg-white p-8 rounded-lg shadow-md w-full text-center">
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="flex items-center justify-center mb-4">
                 <div className="bg-purple-100 p-4 rounded-full">
                   <FiMapPin className="h-8 w-8 text-purple-400" />
@@ -74,7 +82,7 @@ function Contact() {
             </div>
 
             {/* Business Hours */}
-            <div className="bg-white p-8 rounded-lg shadow-md w-full text-center">
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="flex items-center justify-center mb-4">
                 <div className="bg-purple-100 p-4 rounded-full">
                   <FiClock className="h-8 w-8 text-purple-400" />
@@ -94,6 +102,23 @@ function Contact() {
           </div>
         </div>
 
+        {/* Store Gallery */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Visit Our Store
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+            {[img1, img2, img3, img4, img5, img6, img7].map((img, i) => (
+              <img
+                key={i}
+                src={img}
+                alt={`Store view ${i + 1}`}
+                className="rounded-lg shadow-md w-full h-64 object-cover"
+              />
+            ))}
+          </div>
+        </div>
+
         {/* Contact Form */}
         <div className="max-w-4xl mx-auto">
           <div className="bg-white shadow-xl rounded-lg p-10">
@@ -109,7 +134,6 @@ function Contact() {
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name & Email in One Row */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label
@@ -130,7 +154,6 @@ function Contact() {
                     required
                   />
                 </div>
-
                 <div>
                   <label
                     htmlFor="email"
